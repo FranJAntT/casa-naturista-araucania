@@ -3,6 +3,8 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  max-width: 100%;
+  overflow-x: hidden;
   overflow-x: hidden;
 }
 
@@ -162,7 +164,7 @@ a:focus {
 }
 
 .custom_nav-container .navbar-nav {
-  padding-left: 18%;
+  padding-left: 0;
 }
 
 .custom_nav-container .navbar-nav .nav-item .nav-link {
@@ -1540,4 +1542,80 @@ background: linear-gradient(
   font-family: 'Dancing Script', cursive; /* mismo estilo bonito */
 
   line-height: 1;
+}
+
+/* ===== BOTON FLOTANTE WHATSAPP ===== */
+
+/* ===== BOTON FLOTANTE WHATSAPP ===== */
+
+.whatsapp-float {
+
+  position: fixed !important;
+
+  width: 65px;
+  height: 65px;
+
+  bottom: 20px;
+  right: 20px;
+
+  background-color: #25D366;
+
+  color: #ffffff !important;
+
+  border-radius: 50%;
+
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 38px;
+
+  box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+
+  z-index: 999999 !important;
+
+  transition: all 0.3s ease;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+}
+
+/* ICONO */
+
+.whatsapp-float i {
+  color: #ffffff;
+}
+
+/* HOVER */
+
+.whatsapp-float:hover {
+
+  transform: scale(1.10);
+
+  background-color: #1ebe5d;
+
+}
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+  .whatsapp-float {
+
+    width: 58px;
+    height: 58px;
+
+    font-size: 32px;
+
+    bottom: 18px;
+    right: 18px;
+
+  }
+
+}
+
+html, body {
+  overflow-x: hidden;
+  width: 100%;
 }
