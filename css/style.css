@@ -1619,3 +1619,74 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+
+/* ===== FIX CARRUSEL CELULAR CHROME ===== */
+
+.slider_section .carousel-item {
+  width: 100%;
+  min-height: 320px;
+  transition: transform .6s ease-in-out;
+}
+
+.slider_section .detail-box {
+  width: 100%;
+  display: block;
+}
+
+.slider_section .detail-box h1 {
+
+  width: 100%;
+  display: block;
+
+  position: relative;
+
+  transform: translateZ(0);
+  -webkit-transform: translateZ(0);
+
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+
+}
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+  .slider_section {
+    padding-top: 120px;
+    padding-bottom: 80px;
+  }
+
+  .slider_section .detail-box {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .slider_section .detail-box h1 {
+
+    font-size: 1.9rem;
+    line-height: 1.3;
+
+    width: 100%;
+
+    margin-bottom: 15px;
+
+    word-break: break-word;
+
+  }
+
+  .slider_section .detail-box p {
+
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    max-width: 100%;
+
+    margin: auto;
+
+    padding: 0 5px;
+
+  }
+
+}
